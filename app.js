@@ -12,7 +12,7 @@ app.set("view engine", "handlebars");
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-// Main Route
+// Index Route
 app.get("/", (req, res) => {
   res.render("index");
 });
@@ -21,6 +21,20 @@ app.get("/", (req, res) => {
 app.get("/about", (req, res) => {
   res.render("about");
 });
+
+// Sign Up Route
+app.get("/signup", (req, res) => {
+  res.render("signup");
+});
+
+// Login Route
+app.get("/login", (req, res) => {
+  res.render("login");
+});
+
+// Add Sign Up POST Route
+
+// Add Login POST Route
 
 // Server
 const port = 3000;
