@@ -32,9 +32,25 @@ app.get("/login", (req, res) => {
   res.render("login");
 });
 
-// Add Sign Up POST Route
+// New Entry Route
+app.get("/new-entry", (req, res) => {
+  res.render("new-entry");
+});
 
-// Add Login POST Route
+// Archive Route
+app.get("/archive", (req, res) => {
+  res.render("archive");
+});
+
+// Sign Up POST Route
+app.post("/signup", (req, res) => {
+  res.render("signup-success");
+});
+
+// Login POST Route
+app.post("/login", (req, res) => {
+  res.render("login-success");
+});
 
 // Server
 const port = 3000;
